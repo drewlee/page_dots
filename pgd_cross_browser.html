@@ -7,18 +7,22 @@
 body{margin:0; padding:0; font:11px/15px Arial, sans-serif;}
 ul, ol, li{margin:0; padding:0; list-style-type:none;}
 
-.pg-dots-row{display:block; margin:20px 0 0; text-align:center;}
-.pg-dot{display:inline; padding:0 6px;}
-.pg-dot a{display:inline-block; height:12px; width:12px; background-color:red; border:2px solid #666; overflow:hidden;
-    -webkit-border-radius:8px; -moz-border-radius:8px; -o-border-radius:8px; border-radius:8px;
+.pg-dot-panel{padding:17px; background-color:#dedede; border-style:solid; border-width:1px 0; border-color:#fff transparent #999;}
+.pg-dots-row{display:block; height:14px; margin:0; text-align:center;}
+.pg-dot{display:inline; padding:0 7px; vertical-align:top;}
+.pg-dot a{display:inline-block; height:14px; width:14px; background-color:#aaa; overflow:hidden;
+    -webkit-border-radius:7px; -moz-border-radius:7px; -o-border-radius:7px; border-radius:7px;
 }
-.pg-dot a:hover,
-a.pg-active{background-color:#fff;}
+.pg-dot a:hover{background-color:#fff}
+.pg-active{cursor:default;}
+a.pg-active,
+a.pg-active:hover{background-color:#000;}
 
 /* IE 6, IE 7, and IE 8 */
-.ltie9 .pg-dot a{height:16px; width:16px; border:none; background:url(pg_dots.gif) no-repeat 0 0;}
-.ltie9 .pg-dot a:hover,
-.ltie9 .pg-dot .pg-active{background-position:-18px 0;}
+.ltie9 .pg-dot a{background:url(pg_dots.gif) no-repeat 0 0;}
+.ltie9 .pg-dot a:hover{background-position:-32px 0;}
+.ltie9 a.pg-active,
+.ltie9 a.pg-active:hover{background-position:-16px 0;}
 </style>
 
 </head>
@@ -26,14 +30,16 @@ a.pg-active{background-color:#fff;}
 <!--[if IE 9]><!--><body><!--<![endif]-->
 <body>
 
-<ul class="pg-dots-row">
-    <li class="pg-dot"><a href="#">
-        </a></li><li class="pg-dot"><a href="#" class="pg-active">
-        </a></li><li class="pg-dot"><a href="#">
-        </a></li><li class="pg-dot"><a href="#">
-        </a></li><li class="pg-dot"><a href="#">
-    </a></li>
-</ul>
+<div class="pg-dot-panel">
+    <ul class="pg-dots-row">
+        <li class="pg-dot"><a href="#">
+            </a></li><li class="pg-dot"><a href="#" class="pg-active">
+            </a></li><li class="pg-dot"><a href="#">
+            </a></li><li class="pg-dot"><a href="#">
+            </a></li><li class="pg-dot"><a href="#">
+        </a></li>
+    </ul>
+</div>
     
 </body>
 </html>

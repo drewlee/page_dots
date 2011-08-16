@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pagination Dots - Cross Browser Solution</title>
+
+<style>
+body{margin:0; padding:0; font:11px/15px Arial, sans-serif;}
+ul, ol, li{margin:0; padding:0; list-style-type:none;}
+
+.pg-dots-row{display:block; margin:20px 0 0; text-align:center;}
+.pg-dot{display:inline; padding:0 6px;}
+.pg-dot a{display:inline-block; height:12px; width:12px; background-color:red; border:2px solid #666; overflow:hidden;
+    -webkit-border-radius:8px; -moz-border-radius:8px; -o-border-radius:8px; border-radius:8px;
+}
+.pg-dot a:hover,
+a.pg-active{background-color:#fff;}
+
+/* IE 6, IE 7, and IE 8 */
+.ltie9 .pg-dot a{height:16px; width:16px; border:none; background:url(pg_dots.gif) no-repeat 0 0;}
+.ltie9 .pg-dot a:hover,
+.ltie9 .pg-dot .pg-active{background-position:-18px 0;}
+</style>
+
+</head>
+<!--[if lt IE 9]><body class="ltie9"><![endif]-->
+<!--[if IE 9]><!--><body><!--<![endif]-->
+<body>
+
+<ul class="pg-dots-row">
+    <li class="pg-dot"><a href="#">
+        </a></li><li class="pg-dot"><a href="#" class="pg-active">
+        </a></li><li class="pg-dot"><a href="#">
+        </a></li><li class="pg-dot"><a href="#">
+        </a></li><li class="pg-dot"><a href="#">
+    </a></li>
+</ul>
+    
+</body>
+</html>

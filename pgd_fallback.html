@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pagination Dots</title>
+
+<style>
+body{margin:0; padding:0; font:11px/15px Arial, sans-serif;}
+ul, ol, li{margin:0; padding:0; list-style-type:none;}
+
+.pg-dots{display:table; margin:20px auto 0;}
+.pg-dot{display:table-cell; padding:0 6px;}
+.pg-dot a{display:block; height:12px; width:12px; background-color:red; border:2px solid #666;
+    -webkit-border-radius:8px; -moz-border-radius:8px; -o-border-radius:8px; border-radius:8px;
+}
+.pg-dot a:hover, a.pg-active{background-color:#fff;}
+
+/* IE 6 and IE 7 positioning */
+.ielt8 .pg-dots{text-align:center;}
+.ielt8 .pg-dot{display:inline;}
+.ielt8 .pg-dot a{display:inline-block; overflow:hidden;}
+
+/* IE 6, IE 7, and IE 8 image substitution */
+.msie .pg-dot a{height:16px; width:16px; border:none; background:url(pg_dots.gif) no-repeat 0 0;}
+.msie .pg-dot a:hover,
+.msie .pg-dot a.pg-active{background-position:-18px 0;}
+</style>
+
+</head>
+<!--[if lt IE 8]><body class="ielt8 msie"><![endif]-->
+<!--[if IE 8]><body class="ie8 msie"><![endif]-->
+<!--[if IE 9]><!--><body><!--<![endif]-->
+
+<ul class="pg-dots">
+    <li class="pg-dot">
+        <a href="#"></a>
+    </li>
+    <li class="pg-dot">
+        <a href="#" class="pg-active"></a>
+    </li>
+    <li class="pg-dot">
+        <a href="#"></a>
+    </li>
+    <li class="pg-dot">
+        <a href="#"></a>
+    </li>
+    <li class="pg-dot">
+        <a href="#"></a>
+    </li>
+</ul>
+    
+</body>
+</html>

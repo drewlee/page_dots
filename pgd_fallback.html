@@ -10,30 +10,89 @@ Hybrid method utilizing display table for modern browsers, display inline-block 
 -->
 
 <style>
-body{margin:0; padding:0; font:11px/15px Arial, sans-serif;}
-ul, ol, li{margin:0; padding:0; list-style-type:none;}
-
-.pg-dot-panel{padding:17px; background-color:#dedede; border-style:solid; border-width:1px 0; border-color:#fff transparent #999;}
-.pg-dots-row{display:table; margin:0 auto;}
-.pg-dot{display:table-cell; padding:0 7px;}
-.pg-dot a{display:block; height:14px; width:14px; background-color:#aaa;
-    -webkit-border-radius:7px; -moz-border-radius:7px; -o-border-radius:7px; border-radius:7px;
+body {
+  margin: 0;
+  padding: 0;
+  font: 11px/15px Arial, sans-serif;
 }
-.pg-dot a:hover{background-color:#fff}
-.pg-active{cursor:default;}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pg-dot-panel {
+  padding: 17px;
+  background-color: #dedede;
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: #fff transparent #999;
+}
+
+.pg-dots-row {
+  display: table;
+  margin: 0 auto;
+}
+
+.pg-dot {
+  display: table-cell;
+  padding: 0 7px;
+}
+
+.pg-dot a {
+  display: block;
+  height: 14px;
+  width: 14px;
+  background-color: #aaa;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.pg-dot a:hover {
+  background-color: #fff
+}
+
+.pg-active {
+  cursor: default;
+}
+
 a.pg-active,
-a.pg-active:hover{background-color:#000;}
+a.pg-active:hover {
+  background-color: #000;
+}
 
 /* IE 6 and IE 7 positioning */
-.ielt8 .pg-dots-row{text-align:center;}
-.ielt8 .pg-dot{display:inline;}
-.ielt8 .pg-dot a{display:inline-block; overflow:hidden;}
+.ielt8 .pg-dots-row {
+  text-align: center;
+}
+
+.ielt8 .pg-dot {
+  display: inline;
+}
+
+.ielt8 .pg-dot a {
+  display: inline-block;
+  overflow: hidden;
+}
 
 /* IE 6, IE 7, and IE 8 image substitution */
-.msie .pg-dot a{background:url(pg_dots.gif) no-repeat 0 0;}
-.msie .pg-dot a:hover{background-position:-32px 0;}
+.msie .pg-dot a {
+  background: url(pg_dots.gif) no-repeat 0 0;
+}
+
+.msie .pg-dot a:hover {
+  background-position: -32px 0;
+}
+
 .msie a.pg-active,
-.msie a.pg-active:hover{background-position:-16px 0;}
+.msie a.pg-active:hover {
+  background-position: -16px 0;
+}
 </style>
 
 </head>
@@ -42,23 +101,23 @@ a.pg-active:hover{background-color:#000;}
 <!--[if IE 9]><!--><body><!--<![endif]-->
 
 <div class="pg-dot-panel">
-    <ul class="pg-dots-row">
-        <li class="pg-dot">
-            <a href="#"></a>
-        </li>
-        <li class="pg-dot">
-            <a href="#" class="pg-active"></a>
-        </li>
-        <li class="pg-dot">
-            <a href="#"></a>
-        </li>
-        <li class="pg-dot">
-            <a href="#"></a>
-        </li>
-        <li class="pg-dot">
-            <a href="#"></a>
-        </li>
-    </ul>
+  <ul class="pg-dots-row">
+    <li class="pg-dot">
+      <a href="#"></a>
+    </li>
+    <li class="pg-dot">
+      <a href="#" class="pg-active"></a>
+    </li>
+    <li class="pg-dot">
+      <a href="#"></a>
+    </li>
+    <li class="pg-dot">
+      <a href="#"></a>
+    </li>
+    <li class="pg-dot">
+      <a href="#"></a>
+    </li>
+  </ul>
 </div>
     
 </body>
